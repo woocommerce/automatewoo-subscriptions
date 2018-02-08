@@ -7,7 +7,6 @@
  * Author URI: https://prospress.com/
  * License: GPLv3
  * Version: 1.0.0
- * Version: 1.0.0
  * Requires at least: 4.0
  * Tested up to: 4.8
  *

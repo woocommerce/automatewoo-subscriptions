@@ -1,6 +1,6 @@
 {
-    "name": "prospress/mini-extension-boilerplate",
-    "description": "Boilerplate for creating mini-extensions.",
+    "name": "prospress/{plugin_slug}",
+    "description": "{plugin_short_description}",
     "type": "project",
     "license": "GPL-3.0-only"
 }

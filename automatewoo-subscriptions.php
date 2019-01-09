@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: AutomateWoo Subscriptions
+ * Plugin Name: AutomateWoo - Subscriptions Add-on
  * Plugin URI: https://github.com/Prospress/automatewoo-subscriptions/
  * Description: Advanced actions for automating a subscription's lifecycle with AutomateWoo.
  * Author: Prospress Inc.
@@ -39,11 +39,11 @@
 require_once( 'includes/class-pp-dependencies.php' );
 
 if ( false === PP_Dependencies::is_woocommerce_active( '3.0' ) ) {
-	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo Subscriptions', 'WooCommerce', '3.0' );
+	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce', '3.0' );
 	return;
 }
 
-if ( false === PP_Dependencies::is_subscriptions_active( '2.1' ) ) {
-	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo Subscriptions', 'WooCommerce Subscriptions', '2.1' );
+if ( false === PP_Dependencies::is_subscriptions_active( '2.4' ) ) {
+	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce Subscriptions', '2.4' );
 	return;
 }

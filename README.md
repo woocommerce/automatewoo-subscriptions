@@ -1,4 +1,4 @@
-# AutomateWoo Subscriptions
+# AutomateWoo - Subscriptions Add-on
 
 Advanced actions for automating a subscription's lifecycle with AutomateWoo.
 

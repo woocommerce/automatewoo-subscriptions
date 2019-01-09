@@ -1,8 +1,8 @@
 <?php
 /*
- * Plugin Name: {plugin_name}
- * Plugin URI: https://github.com/Prospress/{plugin_slug}/
- * Description: {plugin_short_description}
+ * Plugin Name: AutomateWoo Subscriptions
+ * Plugin URI: https://github.com/Prospress/automatewoo-subscriptions/
+ * Description: Advanced actions for automating a subscription's lifecycle with AutomateWoo.
  * Author: Prospress Inc.
  * Author URI: https://prospress.com/
  * License: GPLv3
@@ -10,7 +10,10 @@
  * Requires at least: 4.0
  * Tested up to: 4.8
  *
- * GitHub Plugin URI: Prospress/{plugin_slug}
+ * WC requires at least: 3.0
+ * WC tested up to: 3.5
+ *
+ * GitHub Plugin URI: Prospress/automatewoo-subscriptions
  * GitHub Branch: master
  *
  * Copyright 2018 Prospress, Inc.  (email : freedoms@prospress.com)
@@ -28,7 +31,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package		{plugin_name}
+ * @package		AutomateWoo Subscriptions
  * @author		Prospress Inc.
  * @since		1.0
  */
@@ -36,11 +39,11 @@
 require_once( 'includes/class-pp-dependencies.php' );
 
 if ( false === PP_Dependencies::is_woocommerce_active( '3.0' ) ) {
-	PP_Dependencies::enqueue_admin_notice( '{plugin_name}', 'WooCommerce', '3.0' );
+	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo Subscriptions', 'WooCommerce', '3.0' );
 	return;
 }
 
 if ( false === PP_Dependencies::is_subscriptions_active( '2.1' ) ) {
-	PP_Dependencies::enqueue_admin_notice( '{plugin_name}', 'WooCommerce Subscriptions', '2.1' );
+	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo Subscriptions', 'WooCommerce Subscriptions', '2.1' );
 	return;
 }

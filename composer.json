@@ -1,6 +1,6 @@
 {
-    "name": "prospress/{plugin_slug}",
-    "description": "{plugin_short_description}",
+    "name": "prospress/automatewoo-subscriptions",
+    "description": "Advanced actions for automating a subscription's lifecycle with AutomateWoo.",
     "type": "project",
     "license": "GPL-3.0-only"
 }

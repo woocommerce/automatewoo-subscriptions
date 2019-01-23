@@ -102,6 +102,7 @@ final class AutomateWoo_Subscriptions {
 
 		$actions = array_merge( $actions, [
 			'subscription_add_shipping'    => 'AutomateWoo_Subscriptions\Action_Subscription_Add_Shipping',
+			'subscription_update_shipping' => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Shipping',
 		] );
 
 		return $actions;

@@ -85,6 +85,7 @@ final class AutomateWoo_Subscriptions {
 	 * Constructor
 	 */
 	private function __construct() {
+		include_once $this->path() . '/includes/autoloader.php';
 		add_action( 'automatewoo/actions', [ $this, 'add_actions' ], 20 );
 	}
 
@@ -97,6 +98,17 @@ final class AutomateWoo_Subscriptions {
 	 */
 	function add_actions( $actions ) {
 		return $actions;
+	}
+
+	/**
+	 * Get the path to something in the plugin dir.
+	 *
+	 * @param string $end End of the path.
+	 *
+	 * @return string
+	 */
+	function path( $end = '' ) {
+		return untrailingslashit( dirname( __FILE__ ) ) . $end;
 	}
 
 	/**

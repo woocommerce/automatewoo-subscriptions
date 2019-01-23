@@ -97,6 +97,9 @@ final class AutomateWoo_Subscriptions {
 	 * @return array
 	 */
 	function add_actions( $actions ) {
+
+		$actions = wcs_array_insert_after( 'subscription_send_invoice', $actions, 'subscription_update_schedule', 'AutomateWoo_Subscriptions\Action_Subscription_Update_Schedule' );
+
 		return $actions;
 	}
 

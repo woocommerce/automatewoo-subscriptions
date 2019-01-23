@@ -100,6 +100,10 @@ final class AutomateWoo_Subscriptions {
 
 		$actions = wcs_array_insert_after( 'subscription_send_invoice', $actions, 'subscription_update_schedule', 'AutomateWoo_Subscriptions\Action_Subscription_Update_Schedule' );
 
+		$actions = array_merge( $actions, [
+			'subscription_add_shipping'    => 'AutomateWoo_Subscriptions\Action_Subscription_Add_Shipping',
+		] );
+
 		return $actions;
 	}
 

@@ -53,3 +53,73 @@ if ( false === PP_Dependencies::is_automatewoo_active( '4.4' ) ) {
 	return;
 }
 
+
+/**
+ * AutomateWoo Subscriptions add-on plugin singleton.
+ *
+ * We don't extend AutomateWoo\Addon here, because this plugin is really
+ * just adding more actions. It's not a full-fledged add-on that requires
+ * things like administration options screens. If we eventually add more
+ * rules or variables, it may make more sense to extend that.
+ *
+ * @class   AutomateWoo_Subscriptions
+ * @package AutomateWoo_Subscriptions
+ */
+final class AutomateWoo_Subscriptions {
+
+	/**
+	 * The plugin version.
+	 *
+	 * @var string
+	 */
+	private $version = '1.0.0';
+
+	/**
+	 * Instance of singleton.
+	 *
+	 * @var AutomateWoo_Subscriptions
+	 */
+	private static $_instance = null;
+
+	/**
+	 * Constructor
+	 */
+	private function __construct() {
+		add_action( 'automatewoo/actions', [ $this, 'add_actions' ], 20 );
+	}
+
+	/**
+	 * Add advanced subscription actions to AutomateWoo's available actions.
+	 *
+	 * @param array $actions A set of actions returned by 'automatewoo/actions' in the form $action_name => $action_class
+	 *
+	 * @return array
+	 */
+	function add_actions( $actions ) {
+		return $actions;
+	}
+
+	/**
+	 * Return the singleton instance.
+	 *
+	 * @return AutomateWoo
+	 */
+	static function instance() {
+		if ( is_null( self::$_instance ) ) {
+			self::$_instance = new self();
+		}
+		return self::$_instance;
+	}
+
+}
+
+/**
+ * Access the plugin singleton with this.
+ *
+ * @return AutomateWoo
+ */
+function AW_Subscriptions() {
+	return AutomateWoo_Subscriptions::instance();
+}
+
+AW_Subscriptions();

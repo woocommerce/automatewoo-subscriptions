@@ -47,3 +47,9 @@ if ( false === PP_Dependencies::is_subscriptions_active( '2.4' ) ) {
 	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce Subscriptions', '2.4' );
 	return;
 }
+
+if ( false === PP_Dependencies::is_automatewoo_active( '4.4' ) ) {
+	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'AutomateWoo', '4.4' );
+	return;
+}
+

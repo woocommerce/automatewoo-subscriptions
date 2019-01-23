@@ -39,6 +39,16 @@ class PP_Dependencies {
 		return self::is_plugin_active( 'woocommerce-subscriptions.php', $minimum_version, 'woocommerce_subscriptions_active_version' );
 	}
 
+	/**
+	 * Check if the if the AutomateWoo plugin is installed and active.
+	 *
+	 * @since 1.1.0
+	 * @return boolean
+	 */
+	public static function is_automatewoo_active( $minimum_version = false ) {
+		return self::is_plugin_active( 'automatewoo.php', $minimum_version, 'automatewoo_version' );
+	}
+
 	/** Admin Notices **/
 
 	/**

@@ -6,7 +6,7 @@
  * Author: Prospress Inc.
  * Author URI: https://prospress.com/
  * License: GPLv3
- * Version: 1.0.0
+ * Version: 0.0.1-beta-1
  * Requires at least: 4.0
  * Tested up to: 4.8
  *
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.0.0';
+	private $version = '0.0.1';
 
 	/**
 	 * Instance of singleton.

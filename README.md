@@ -16,28 +16,47 @@ The AutomateWoo plugin makes it possible to modify the first two of these with t
 
 The **AutomateWoo Subscriptions Add-on** makes it possible to modify some of the others parts by providing additional actions.
 
+![](http://pic.pros.pr/6cf806f1ffe5/Screen%20Shot%202019-01-24%20at%202.19.02%20pm.png)
+
+### New Subscriptions Actions
+
+The **AutomateWoo Subscriptions Add-on** adds 4 new actions:
+
+* **Update Schedule**: to change a subscription's billing period or interval.
+* **Add Shipping**: to add a chosen shipping method as a new line item, with a custom cost and name, on subscriptions.
+* **Update Shipping**: to update a shipping method's name or amount on a subscription.
+* **Remove Shipping**: to remove a chosen shipping method from a subscription.
+
+![New Actions](http://pic.pros.pr/a0e63624deaf/Screen%252520Shot%2525202019-01-24%252520at%2525202.17.23%252520pm.png)
+
+These actions can be run on any [subscription trigger](https://automatewoo.com/docs/triggers/list/#subscriptions).
+
 With these actions, it's possible to change a subscription's:
 
 * billing schedule, for example, to switch a subscription from being billed annually to monthly
-* shipping costs, for example, to only charge shipping annually, despite renewing monthly
+* shipping costs at different stages of the the subscription lifecycle, for example, to only charge shipping annually, despite renewing monthly
 
-All of which can be run on any [subscription trigger](https://automatewoo.com/docs/triggers/list/#subscriptions).
-
-Combined with the built-in actions to add, update or remove product line items, these actions make it possible to offer customers dynamic subscription lifecycles, like:
+Combined with the existing built-in Subscriptions actions in AutomateWoo that can add, update or remove product line items, these actions make it possible to offer customers dynamic subscription lifecycles, like:
 
 * magazines which ship monthly but are billed annually or quarterly
 * pre-paid subscriptions, where a customer can choose to pay for a given period up-front
 * sequential subscriptions, where a customer receives different items, at different costs, based on the date of their sign-up
 * seasonal subscriptions, where a customer receives different items, at different costs, at different times of year
 
-Want more subscription actions?
+### Future Subscription Actions
+
+We currently plan to add additional actions to modify:
+
+* tax line items
+* fee line items
 
 In future, we may add actions to:
 
 * change a subscription's dates, like the next payment or expiration date
 * process a renewal for an active subscription
-* regenerate downloadable product permissions based on the subscription's current product line items
+* regenerate downloadable product permissions (to update them based on the subscription's current product line items)
 
+If any of these are interesting for your store, please [open a new Issue](https://github.com/Prospress/automatewoo-subscriptions/issues/new) and tell us more about your use case.
 
 ## Installation
 

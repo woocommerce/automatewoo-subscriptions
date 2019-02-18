@@ -6,7 +6,7 @@
  * Author: Prospress Inc.
  * Author URI: https://prospress.com/
  * License: GPLv3
- * Version: 0.0.1-beta-1
+ * Version: 1.0.0
  * Requires at least: 4.0
  * Tested up to: 4.8
  *
@@ -16,7 +16,7 @@
  * GitHub Plugin URI: Prospress/automatewoo-subscriptions
  * GitHub Branch: master
  *
- * Copyright 2018 Prospress, Inc.  (email : freedoms@prospress.com)
+ * Copyright 2019 Prospress, Inc.  (email : freedoms@prospress.com)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '0.0.1';
+	private $version = '1.0.0';
 
 	/**
 	 * Instance of singleton.

@@ -36,20 +36,20 @@
  * @since		1.0
  */
 
-require_once( 'includes/class-pp-dependencies.php' );
+require_once( 'includes/class-aws-dependencies.php' );
 
-if ( false === PP_Dependencies::is_woocommerce_active( '3.0' ) ) {
-	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce', '3.0' );
+if ( false === AWS_Dependencies::is_woocommerce_active( '3.0' ) ) {
+	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce', '3.0' );
 	return;
 }
 
-if ( false === PP_Dependencies::is_subscriptions_active( '2.4' ) ) {
-	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce Subscriptions', '2.4' );
+if ( false === AWS_Dependencies::is_subscriptions_active( '2.4' ) ) {
+	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce Subscriptions', '2.4' );
 	return;
 }
 
-if ( false === PP_Dependencies::is_automatewoo_active( '4.4' ) ) {
-	PP_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'AutomateWoo', '4.4' );
+if ( false === AWS_Dependencies::is_automatewoo_active( '4.4' ) ) {
+	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'AutomateWoo', '4.4' );
 	return;
 }
 

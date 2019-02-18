@@ -1,13 +1,16 @@
 <?php
 
-if ( ! class_exists( 'PP_Dependencies' ) ) :
+if ( ! class_exists( 'AWS_Dependencies' ) ) :
 
 /**
- * Prospress Dependency Checker
+ * AutomateWoo Subscriptions Dependency Checker
  *
- * Checks if WooCommerce and Subscriptions are enabled
+ * Methods to check if AutomateWoo, WooCommerce and Subscriptions are enabled.
+ *
+ * Based on Prospress Dependency Checker, but uses different prefix to avoid conflicts
+ * with version of it installed, as it does not include is_automatewoo_active().
  */
-class PP_Dependencies {
+class AWS_Dependencies {
 
 	protected static $admin_notices = array();
 
@@ -200,6 +203,6 @@ class PP_Dependencies {
 
 }
 
-PP_Dependencies::init();
+AWS_Dependencies::init();
 
 endif;

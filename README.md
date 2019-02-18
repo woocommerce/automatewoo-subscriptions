@@ -21,7 +21,6 @@ The **AutomateWoo Subscriptions Add-on** makes it possible to modify some of the
 The **AutomateWoo Subscriptions Add-on** adds 4 new actions:
 
 * **Update Schedule**: to change a subscription's billing period or interval.
-* **Update Product**: to change a product line item's quantity, name or price.
 * **Add Shipping**: to add a chosen shipping method as a new line item, with a custom cost and name, on subscriptions.
 * **Update Shipping**: to update a shipping method's name or amount on a subscription.
 * **Remove Shipping**: to remove a chosen shipping method from a subscription.
@@ -38,7 +37,7 @@ With these actions, it's possible to change a subscription's:
 * billing schedule, for example, to switch a subscription from being billed annually to monthly
 * shipping costs at different stages of the the subscription lifecycle, for example, to only charge shipping annually, despite renewing monthly
 
-Combined with the existing built-in Subscriptions actions in AutomateWoo that can add or remove product and coupon line items, these actions make it possible to offer customers dynamic subscription lifecycles, like:
+Combined with the existing built-in Subscriptions actions in AutomateWoo that can add, update or remove product line items, these actions make it possible to offer customers dynamic subscription lifecycles, like:
 
 * magazines which ship monthly but are billed annually or quarterly
 * pre-paid subscriptions, where a customer can choose to pay for a given period up-front

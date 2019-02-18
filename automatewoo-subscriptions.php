@@ -100,11 +100,6 @@ final class AutomateWoo_Subscriptions {
 
 		$actions = wcs_array_insert_after( 'subscription_send_invoice', $actions, 'subscription_update_schedule', 'AutomateWoo_Subscriptions\Action_Subscription_Update_Schedule' );
 
-		// Allow AutomateWoo core to override our Update Product action in future
-		if ( ! class_exists( 'AutomateWoo\Action_Subscription_Update_Product' ) ) {
-			$actions = wcs_array_insert_after( 'subscription_add_product', $actions, 'subscription_update_product', 'AutomateWoo_Subscriptions\Action_Subscription_Update_Product' );
-		}
-
 		$actions = array_merge( $actions, [
 			'subscription_add_shipping'    => 'AutomateWoo_Subscriptions\Action_Subscription_Add_Shipping',
 			'subscription_update_shipping' => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Shipping',

@@ -41,9 +41,11 @@ With these actions, it's possible to change a subscription's:
 Combined with the existing built-in Subscriptions actions in AutomateWoo that can add or remove product and coupon line items, these actions make it possible to offer customers dynamic subscription lifecycles, like:
 
 * magazines which ship monthly but are billed annually or quarterly
-* pre-paid subscriptions, where a customer can choose to pay for a given period up-front
+* [pre-paid subscriptions](https://automatewoo.com/docs/examples/pre-paid-subscriptions/), where a customer can choose to pay for a given period up-front
 * sequential subscriptions, where a customer receives different items, at different costs, based on the date of their sign-up
 * seasonal subscriptions, where a customer receives different items, at different costs, at different times of year
+
+It's also possible to use these actions to [bulk edit subscriptions](https://automatewoo.com/docs/examples/bulk-update-subscription-prices/).
 
 ### Future Subscription Actions
 

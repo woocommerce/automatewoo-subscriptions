@@ -130,6 +130,15 @@ class Action_Subscription_Update_Product extends \AutomateWoo\Action_Subscriptio
 		return __( 'Optionally set a new quantity for the product. Defaults to the current quantity set on the subscription.', 'automatewoo-subscriptions' );
 	}
 
+
+	/**
+	 * Get the description to display on the cost field for this action
+	 */
+	protected function get_cost_field_description() {
+		return __( 'Optionally set a custom price to use for the line item\'s cost. Do not include a currency symbol. Total line item cost will be this amount * quantity. Price should be entered the same as it would be on the Edit Product screen - taxes inclusive or exclusive. Defaults to no-change - the current price set on the product line item will remain.', 'automatewoo-subscriptions' );
+	}
+
+
 	/**
 	 * Get a message to update to the subscription to record the product being updateed by this action.
 	 *

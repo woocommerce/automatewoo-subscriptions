@@ -107,7 +107,7 @@ class Action_Subscription_Update_Product extends \AutomateWoo\Action_Subscriptio
 			$update_product_args['quantity'] = ( $this->get_option( 'quantity' ) ) ? $this->get_option( 'quantity' ) : $item->get_quantity();
 
 			$update_product_args['subtotal'] = $update_product_args['total'] = wc_get_price_excluding_tax( $product, array(
-				'price' => $this->get_option( 'line_item_cost' ),
+				'price' => $this->get_option( 'line_item_cost', true ),
 				'qty'   => $update_product_args['quantity'],
 			) );
 		}

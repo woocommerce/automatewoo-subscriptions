@@ -51,7 +51,7 @@ abstract class Abstract_Action_Subscription_Edit_Shipping extends \AutomateWoo\A
 	protected function get_object_for_edit() {
 		return [
 			'shipping_method_id' => $this->get_option( 'shipping_method_id' ),
-			'line_item_name'     => $this->get_option( 'line_item_name' ),
+			'line_item_name'     => $this->get_option( 'line_item_name', true ),
 			'line_item_cost'     => $this->get_option( 'line_item_cost', true ),
 		];
 	}

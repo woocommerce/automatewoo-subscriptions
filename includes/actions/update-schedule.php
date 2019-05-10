@@ -52,7 +52,7 @@ class Action_Subscription_Update_Schedule extends \AutomateWoo\Action_Subscripti
 
 
 	/**
-	 * Set the chosen biling interval and period on a subscription.
+	 * Set the chosen billing interval and period on a subscription.
 	 *
 	 * @param array            $billing_schedule Billing schedule data. Same data as the return value of @see $this->get_object_for_edit().
 	 * @param \WC_Subscription $subscription Instance of the subscription being edited by this action.

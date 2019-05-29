@@ -84,8 +84,10 @@ class Action_Subscription_Update_Product extends \AutomateWoo\Action_Subscriptio
 		$item = null;
 
 		foreach ( $subscription->get_items() as $subscription_item ) {
-			// Both of these ID getters will return the variation_id if the product is a variation.
-			if ( $product->get_id() === $subscription_item->get_product_id() ) {
+			// Since $product can not be a variable product there's no need to check a product variation's parent ID
+			$item_product_id = $subscription_item->get_variation_id() ? $subscription_item->get_variation_id() : $subscription_item->get_product_id();
+
+			if ( $product->get_id() === $item_product_id ) {
 				$item = $subscription_item;
 				break;
 			}

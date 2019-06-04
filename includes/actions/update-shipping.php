@@ -55,7 +55,7 @@ class Action_Subscription_Update_Shipping extends Action_Subscription_Add_Shippi
 		}
 
 		if ( $this->get_option( 'line_item_cost' ) ) {
-			$update_args['total'] = $this->get_option( 'line_item_cost' );
+			$update_args['total'] = $this->get_option( 'line_item_cost', true );
 		}
 
 		if ( ! empty( $update_args ) ) {

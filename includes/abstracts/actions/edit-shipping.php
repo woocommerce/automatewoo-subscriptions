@@ -51,8 +51,8 @@ abstract class Abstract_Action_Subscription_Edit_Shipping extends \AutomateWoo\A
 	protected function get_object_for_edit() {
 		return [
 			'shipping_method_id' => $this->get_option( 'shipping_method_id' ),
-			'line_item_name'     => $this->get_option( 'line_item_name' ),
-			'line_item_cost'     => $this->get_option( 'line_item_cost' ),
+			'line_item_name'     => $this->get_option( 'line_item_name', true ),
+			'line_item_cost'     => $this->get_option( 'line_item_cost', true ),
 		];
 	}
 
@@ -94,7 +94,7 @@ abstract class Abstract_Action_Subscription_Edit_Shipping extends \AutomateWoo\A
 	/**
 	 * Get the codes of all non-AutomateWoo shippings.
 	 *
-	 * @return WC_Shipping_Method[]
+	 * @return \WC_Shipping_Method[]
 	 */
 	protected function get_shipping_methods() {
 		return WC()->shipping() ? WC()->shipping->load_shipping_methods() : [];

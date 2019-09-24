@@ -80,7 +80,7 @@ To keep the plugin up-to-date, use the [GitHub Updater](https://github.com/afrag
 
 ## Reporting Issues
 
-If you find an problem or would like to request this plugin be extended, please [open a new Issue](https://github.com/Prospress/automatewoo-subscriptions/issues/new).
+If you find a problem, please [open a new Issue](https://github.com/Prospress/automatewoo-subscriptions/issues/new). If you would like to request a new feature for this plugin, please [use the ideas board](https://ideas.automatewoo.com/automatewoo).
 
 ---
 

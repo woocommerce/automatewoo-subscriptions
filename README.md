@@ -25,6 +25,10 @@ The **AutomateWoo Subscriptions Add-on** adds 4 new actions:
 * **Add Shipping**: to add a chosen shipping method as a new line item, with a custom cost and name, on subscriptions.
 * **Update Shipping**: to update a shipping method's name or amount on a subscription.
 * **Remove Shipping**: to remove a chosen shipping method from a subscription.
+* **Add Tax**: to add a chosen tax rate as a new line item, with a custom cost and name, on subscriptions.
+* **Update Tax**: to update a tax rate's name or amount on a subscription.
+* **Remove Tax**: to remove a chosen tax rate from a subscription.
+* **Recalculate Taxes**: to add and calculate tax rates based on the store's current tax settings.
 * **Update Currency**: to change the currency on a subscription.
 
 These actions can be run on any [subscription trigger](https://automatewoo.com/docs/triggers/list/#subscriptions).

@@ -109,6 +109,13 @@ final class AutomateWoo_Subscriptions {
 			'subscription_add_shipping'    => 'AutomateWoo_Subscriptions\Action_Subscription_Add_Shipping',
 			'subscription_update_shipping' => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Shipping',
 			'subscription_remove_shipping' => 'AutomateWoo_Subscriptions\Action_Subscription_Remove_Shipping',
+
+			// Edit Taxes.
+			'subscription_add_tax'         => 'AutomateWoo_Subscriptions\Action_Subscription_Add_Tax',
+			'subscription_update_tax'      => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Tax',
+			'subscription_remove_tax'      => 'AutomateWoo_Subscriptions\Action_Subscription_Remove_Tax',
+			'subscription_recalculate_tax' => 'AutomateWoo_Subscriptions\Action_Subscription_Recalculate_Tax',
+
 			'subscription_update_currency' => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Currency',
 		] );
 

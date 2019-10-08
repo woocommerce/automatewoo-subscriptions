@@ -60,8 +60,6 @@ In future, we may add actions to:
 * process a renewal for an active subscription
 * regenerate downloadable product permissions (to update them based on the subscription's current product line items)
 
-If any of these are interesting for your store, please [open a new Issue](https://github.com/Prospress/automatewoo-subscriptions/issues/new) and tell us more about your use case.
-
 ## Installation
 
 Please note, this plugin is currently pre-release. It is a work in progress, being worked on in public rather than waiting until it is finished.

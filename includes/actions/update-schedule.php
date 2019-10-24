@@ -32,8 +32,8 @@ class Action_Subscription_Update_Schedule extends \AutomateWoo\Action_Subscripti
 	 * Add billing interval & period selection field to the action's admin UI.
 	 */
 	function load_fields() {
-		$this->add_billing_interval_field();
 		$this->add_billing_period_field();
+		$this->add_billing_interval_field();
 		$this->add_recalculate_field();
 	}
 
@@ -107,7 +107,6 @@ class Action_Subscription_Update_Schedule extends \AutomateWoo\Action_Subscripti
 	 */
 	protected function add_billing_interval_field() {
 		$input = new \AutomateWoo\Fields\Number();
-		$input->set_required();
 		$input->set_min( 1 );
 		$input->set_name( 'billing_interval' );
 		$input->set_title( __( 'Billing Interval', 'automatewoo-subscriptions' ) );

@@ -1,22 +1,20 @@
 <?php
-/*
+/**
  * Plugin Name: AutomateWoo - Subscriptions Add-on
- * Plugin URI: https://github.com/Prospress/automatewoo-subscriptions/
+ * Plugin URI: https://github.com/woocommerce/automatewoo-subscriptions/
  * Description: Advanced actions for automating a subscription's lifecycle with AutomateWoo.
- * Author: Prospress Inc.
- * Author URI: https://prospress.com/
+ * Author: WooCommerce
+ * Author URI: https://woocommerce.com/
  * License: GPLv3
- * Version: 1.0.1
+ * Version: 1.0.2
  * Requires at least: 4.0
- * Tested up to: 4.8
+ * Tested up to: 5.4
  *
  * WC requires at least: 3.0
- * WC tested up to: 3.5
+ * WC tested up to: 4.0
  *
- * GitHub Plugin URI: Prospress/automatewoo-subscriptions
+ * GitHub Plugin URI: woocommerce/automatewoo-subscriptions
  * GitHub Branch: master
- *
- * Copyright 2019 Prospress, Inc.  (email : freedoms@prospress.com)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,12 +29,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package		AutomateWoo Subscriptions
- * @author		Prospress Inc.
- * @since		1.0
+ * @package AutomateWoo Subscriptions
+ * @author  WooCommerce
+ * @since   1.0.0
  */
 
-require_once( 'includes/class-aws-dependencies.php' );
+defined( 'ABSPATH' ) || exit;
+
+require_once __DIR__ . '/includes/class-aws-dependencies.php';
 
 if ( false === AWS_Dependencies::is_woocommerce_active( '3.0' ) ) {
 	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'WooCommerce', '3.0' );
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.0.1';
+	private $version = '1.0.2';
 
 	/**
 	 * Instance of singleton.

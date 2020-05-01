@@ -6,7 +6,7 @@
  * Author: WooCommerce
  * Author URI: https://woocommerce.com/
  * License: GPLv3
- * Version: 1.0.2
+ * Version: 1.0.3
  * Requires at least: 4.0
  * Tested up to: 5.4
  *
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.0.2';
+	private $version = '1.0.3';
 
 	/**
 	 * Instance of singleton.

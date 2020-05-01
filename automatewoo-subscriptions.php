@@ -48,8 +48,8 @@ if ( false === AWS_Dependencies::is_subscriptions_active( '2.4' ) ) {
 	return;
 }
 
-if ( false === AWS_Dependencies::is_automatewoo_active( '4.4' ) ) {
-	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'AutomateWoo', '4.4' );
+if ( false === AWS_Dependencies::is_automatewoo_active( '4.8' ) ) {
+	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'AutomateWoo', '4.8' );
 	return;
 }
 

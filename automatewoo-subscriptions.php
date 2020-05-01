@@ -6,12 +6,12 @@
  * Author: WooCommerce
  * Author URI: https://woocommerce.com/
  * License: GPLv3
- * Version: 1.0.2
+ * Version: 1.0.3
  * Requires at least: 4.0
  * Tested up to: 5.4
  *
  * WC requires at least: 3.0
- * WC tested up to: 4.0
+ * WC tested up to: 4.1
  *
  * GitHub Plugin URI: woocommerce/automatewoo-subscriptions
  * GitHub Branch: master
@@ -48,8 +48,8 @@ if ( false === AWS_Dependencies::is_subscriptions_active( '2.4' ) ) {
 	return;
 }
 
-if ( false === AWS_Dependencies::is_automatewoo_active( '4.4' ) ) {
-	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'AutomateWoo', '4.4' );
+if ( false === AWS_Dependencies::is_automatewoo_active( '4.8' ) ) {
+	AWS_Dependencies::enqueue_admin_notice( 'AutomateWoo - Subscriptions Add-on', 'AutomateWoo', '4.8' );
 	return;
 }
 
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.0.2';
+	private $version = '1.0.3';
 
 	/**
 	 * Instance of singleton.

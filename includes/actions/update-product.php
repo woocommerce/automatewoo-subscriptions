@@ -121,7 +121,7 @@ class Action_Subscription_Update_Product extends \AutomateWoo\Action_Subscriptio
 
 		// Now we need to refresh the subscription to make sure it has the up-to-date line item then recalculate its totals so taxes etc. are updated
 		$subscription = wcs_get_subscription( $subscription->get_id() );
-		$subscription->calculate_totals();
+		$this->recalculate_subscription_totals( $subscription );
 	}
 
 

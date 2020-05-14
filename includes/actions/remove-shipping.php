@@ -62,7 +62,9 @@ class Action_Subscription_Remove_Shipping extends Action_Subscription_Add_Shippi
 
 		foreach ( $subscription->get_shipping_methods() as $line_item ) {
 			// Same approach used in Abstract_WC_Order::has_shipping_method() to check for method
-			if ( 0 === strpos( $line_item->get_method_id(), $shipping_data['shipping_method_id'] ) ) {
+			if ( 0 === strpos( $line_item->get_method_id(), $shipping_data['shipping_method_id'] )
+				|| $this->all_shipping_method_option_key === $shipping_data['shipping_method_id']
+			) {
 				$subscription->remove_item( $line_item->get_id() );
 			}
 		}

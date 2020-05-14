@@ -83,6 +83,6 @@ class Action_Subscription_Remove_Shipping extends Action_Subscription_Add_Shippi
 	 * @return string
 	 */
 	protected function get_note( $shipping_data ) {
-		return sprintf( __( '%1$s workflow run: removed shipping method from subscription. (Shipping Method ID: %2$d; Workflow ID: %3$d)', 'automatewoo-subscriptions' ), $this->workflow->get_title(), $shipping_data['shipping_method_id'], $this->workflow->get_id() );
+		return sprintf( __( '%1$s workflow run: removed shipping method from subscription. (Shipping Method ID: %2$s; Workflow ID: %3$d)', 'automatewoo-subscriptions' ), $this->workflow->get_title(), $shipping_data['shipping_method_id'], $this->workflow->get_id() );
 	}
 }

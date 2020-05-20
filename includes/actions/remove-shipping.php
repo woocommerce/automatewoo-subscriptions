@@ -45,7 +45,7 @@ class Action_Subscription_Remove_Shipping extends Action_Subscription_Add_Shippi
 	/**
 	 * Explain to store admin what this action does via a unique title and description.
 	 */
-	function load_admin_details() {
+	public function load_admin_details() {
 		parent::load_admin_details();
 		$this->title       = __( 'Remove Shipping', 'automatewoo-subscriptions' );
 		$this->description = __( 'Remove a shipping line item or items from a subscription, if any line items match the chosen shipping method. This is useful for bulk editing subscriptions, or to change the shipping charged to a subscriber at different stages of their subscription\'s lifecycle. Please note: all line items for the chosen shipping method will be removed.', 'automatewoo-subscriptions' );
@@ -62,7 +62,8 @@ class Action_Subscription_Remove_Shipping extends Action_Subscription_Add_Shippi
 
 		foreach ( $subscription->get_shipping_methods() as $line_item ) {
 			// Same approach used in Abstract_WC_Order::has_shipping_method() to check for method
-			if ( 0 === strpos( $line_item->get_method_id(), $shipping_data['shipping_method_id'] )
+			if (
+				0 === strpos( $line_item->get_method_id(), $shipping_data['shipping_method_id'] )
 				|| $this->all_shipping_method_option_key === $shipping_data['shipping_method_id']
 			) {
 				$subscription->remove_item( $line_item->get_id() );

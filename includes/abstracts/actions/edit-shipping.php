@@ -38,7 +38,7 @@ abstract class Abstract_Action_Subscription_Edit_Shipping extends \AutomateWoo\A
 	 *
 	 * Optionally also add the quantity input field for the shipping if the instance requires it.
 	 */
-	function load_fields() {
+	public function load_fields() {
 		$this->add_shipping_select_field();
 
 		if ( $this->load_name_field ) {
@@ -88,7 +88,7 @@ abstract class Abstract_Action_Subscription_Edit_Shipping extends \AutomateWoo\A
 		$shipping_method_titles = [];
 
 		if ( $this->include_all_shipping_method ) {
-			$shipping_method_titles[$this->all_shipping_method_option_key] = __( 'All shipping methods', 'automatewoo-subscriptions' );
+			$shipping_method_titles[ $this->all_shipping_method_option_key ] = __( 'All shipping methods', 'automatewoo-subscriptions' );
 		}
 
 		foreach ( $this->get_shipping_methods() as $shipping_method_id => $shipping_method ) {

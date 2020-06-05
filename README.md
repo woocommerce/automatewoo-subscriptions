@@ -12,9 +12,7 @@ A subscription has a number of core parts:
 
 The AutomateWoo plugin makes it possible to modify the first two of these with the [Add/Remove Product](https://automatewoo.com/docs/actions/subscription-add-remove-product/) and [Add/Remove Coupon](https://automatewoo.com/docs/actions/subscription-add-remove-coupon/) actions.
 
-The **AutomateWoo Subscriptions Add-on** makes it possible to modify some of the others parts by providing additional actions.
-
-![](http://pic.pros.pr/6cf806f1ffe5/Screen%20Shot%202019-01-24%20at%202.19.02%20pm.png)
+The **AutomateWoo Subscriptions Add-on** makes it possible to modify some of the other parts by providing additional actions.
 
 ## New Subscriptions Actions
 
@@ -29,14 +27,14 @@ The **AutomateWoo Subscriptions Add-on** adds 4 new actions:
 
 These actions can be run on any [subscription trigger](https://automatewoo.com/docs/triggers/list/#subscriptions).
 
-![New Actions](http://pic.pros.pr/a0e63624deaf/Screen%252520Shot%2525202019-01-24%252520at%2525202.17.23%252520pm.png)
+![New Actions](https://d.pr/i/bUAlo2+)
 
 ### Applications
 
 With these actions, it's possible to change a subscription's:
 
 * billing schedule, for example, to switch a subscription from being billed annually to monthly
-* shipping costs at different stages of the the subscription lifecycle, for example, to only charge shipping annually, despite renewing monthly
+* shipping costs at different stages of the subscription lifecycle, for example, to only charge shipping annually, despite renewing monthly
 
 Combined with the existing built-in Subscriptions actions in AutomateWoo that can add or remove product and coupon line items, these actions make it possible to offer customers dynamic subscription lifecycles, like:
 
@@ -54,7 +52,7 @@ We currently plan to add additional actions to modify:
 * tax line items
 * fee line items
 
-In future, we may add actions to:
+In the future, we may add actions to:
 
 * change a subscription's dates, like the next payment or expiration date
 * process a renewal for an active subscription
@@ -62,11 +60,9 @@ In future, we may add actions to:
 
 ## Installation
 
-Please note, this plugin is currently pre-release. It is a work in progress, being worked on in public rather than waiting until it is finished.
-
 To install:
 
-1. Download the latest version of the plugin [here](https://github.com/Prospress/automatewoo-subscriptions/archive/master.zip)
+1. Download the latest version of the plugin [here](https://github.com/woocommerce/automatewoo-subscriptions/archive/master.zip)
 1. Go to **Plugins > Add New > Upload** administration screen on your WordPress site
 1. Select the ZIP file you just downloaded
 1. Click **Install Now**
@@ -78,12 +74,4 @@ To keep the plugin up-to-date, use the [GitHub Updater](https://github.com/afrag
 
 ## Reporting Issues
 
-If you find a problem, please [open a new Issue](https://github.com/Prospress/automatewoo-subscriptions/issues/new). If you would like to request a new feature for this plugin, please [use the ideas board](https://ideas.automatewoo.com/automatewoo).
-
----
-
-<p align="center">
-	<a href="https://prospress.com/">
-		<img src="https://cloud.githubusercontent.com/assets/235523/11986380/bb6a0958-a983-11e5-8e9b-b9781d37c64a.png" width="160">
-	</a>
-</p>
+If you find a problem, please [open a new Issue](https://github.com/woocommerce/automatewoo-subscriptions/issues/new). If you would like to request a new feature for this plugin, please [use the ideas board](https://ideas.automatewoo.com/automatewoo).

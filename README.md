@@ -10,7 +10,7 @@ A subscription has a number of core parts:
 * tax line items
 * fee line items
 
-The AutomateWoo plugin makes it possible to modify the first two of these with the [Add/Remove Product](https://automatewoo.com/docs/actions/subscription-add-remove-product/) and [Add/Remove Coupon](https://automatewoo.com/docs/actions/subscription-add-remove-coupon/) actions.
+The AutomateWoo plugin makes it possible to modify product and coupon line items with the [Add/Remove Product](https://automatewoo.com/docs/actions/subscription-add-remove-product/) and [Add/Remove Coupon](https://automatewoo.com/docs/actions/subscription-add-remove-coupon/) actions.
 
 The **AutomateWoo Subscriptions Add-on** makes it possible to modify some of the other parts by providing additional actions.
 

@@ -11,7 +11,7 @@
  * Tested up to: 5.4
  *
  * WC requires at least: 3.0
- * WC tested up to: 4.1
+ * WC tested up to: 4.2
  *
  * GitHub Plugin URI: woocommerce/automatewoo-subscriptions
  * GitHub Branch: master

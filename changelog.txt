@@ -1,5 +1,9 @@
 == AutomateWoo - Subscriptions Add-on changelog ==
 
+2020-06-05 - version 1.0.4
+* New - Add support for WooCommerce 4.2
+* Fix - Issue where the "Subscriptions - Remove Shipping" didn't work for "All shipping methods"
+
 2020-05-01 - version 1.0.3
 * Fix - Issue where subscription discounts would not be recalculated when updating a product via a the 'Update Product' action
 * Fix - Add support for WooCommerce 4.1

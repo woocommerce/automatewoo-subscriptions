@@ -6,7 +6,7 @@
  * Author: WooCommerce
  * Author URI: https://woocommerce.com/
  * License: GPLv3
- * Version: 1.0.3
+ * Version: 1.1.0
  * Requires at least: 4.0
  * Tested up to: 5.4
  *
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.0.4';
+	private $version = '1.1.0';
 
 	/**
 	 * Instance of singleton.
@@ -106,10 +106,11 @@ final class AutomateWoo_Subscriptions {
 		}
 
 		$actions = array_merge( $actions, [
-			'subscription_add_shipping'    => 'AutomateWoo_Subscriptions\Action_Subscription_Add_Shipping',
-			'subscription_update_shipping' => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Shipping',
-			'subscription_remove_shipping' => 'AutomateWoo_Subscriptions\Action_Subscription_Remove_Shipping',
-			'subscription_update_currency' => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Currency',
+			'subscription_add_shipping'      => 'AutomateWoo_Subscriptions\Action_Subscription_Add_Shipping',
+			'subscription_update_shipping'   => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Shipping',
+			'subscription_remove_shipping'   => 'AutomateWoo_Subscriptions\Action_Subscription_Remove_Shipping',
+			'subscription_update_currency'   => 'AutomateWoo_Subscriptions\Action_Subscription_Update_Currency',
+			'subscription_recalculate_taxes' => 'AutomateWoo_Subscriptions\Action_Subscription_Recalculate_Taxes',
 		] );
 
 		return $actions;

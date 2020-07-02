@@ -1,5 +1,8 @@
 == AutomateWoo - Subscriptions Add-on changelog ==
 
+2020-07-02 - version 1.1.0
+* New - Add action: "Subscription - Recalculate Totals"
+
 2020-06-05 - version 1.0.4
 * New - Add support for WooCommerce 4.2
 * Fix - Issue where the "Subscriptions - Remove Shipping" action didn't work for "All shipping methods"

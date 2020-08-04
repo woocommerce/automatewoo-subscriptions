@@ -6,7 +6,7 @@
  * Author: WooCommerce
  * Author URI: https://woocommerce.com/
  * License: GPLv3
- * Version: 1.1.0
+ * Version: 1.2.0
  * Requires at least: 4.0
  * Tested up to: 5.4
  *
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.1.0';
+	private $version = '1.2.0';
 
 	/**
 	 * Instance of singleton.
@@ -131,7 +131,7 @@ final class AutomateWoo_Subscriptions {
 	/**
 	 * Return the singleton instance.
 	 *
-	 * @return AutomateWoo
+	 * @return AutomateWoo_Subscriptions
 	 */
 	static function instance() {
 		if ( is_null( self::$_instance ) ) {
@@ -145,7 +145,7 @@ final class AutomateWoo_Subscriptions {
 /**
  * Access the plugin singleton with this.
  *
- * @return AutomateWoo
+ * @return AutomateWoo_Subscriptions
  */
 function AW_Subscriptions() {
 	return AutomateWoo_Subscriptions::instance();

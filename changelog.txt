@@ -1,5 +1,8 @@
 == AutomateWoo - Subscriptions Add-on changelog ==
 
+2020-08-04 - version 1.2.0
+* New - Add action: "Subscription - Regenerate Download Permissions"
+
 2020-07-02 - version 1.1.0
 * New - Add action: "Subscription - Recalculate Totals"
 

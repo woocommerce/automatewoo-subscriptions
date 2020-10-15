@@ -14,7 +14,7 @@
  * WC tested up to: 4.2
  *
  * GitHub Plugin URI: woocommerce/automatewoo-subscriptions
- * GitHub Branch: master
+ * Primary Branch: trunk
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

@@ -1,5 +1,8 @@
 == AutomateWoo - Subscriptions Add-on changelog ==
 
+2020-10-16 - version 1.2.1
+* Tweak - Renames production branch from 'master' to 'trunk'
+
 2020-08-04 - version 1.2.0
 * New - Add action: "Subscription - Regenerate Download Permissions"
 

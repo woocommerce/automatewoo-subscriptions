@@ -6,7 +6,7 @@
  * Author: WooCommerce
  * Author URI: https://woocommerce.com/
  * License: GPLv3
- * Version: 1.2.0
+ * Version: 1.2.1
  * Requires at least: 4.0
  * Tested up to: 5.4
  *
@@ -14,7 +14,7 @@
  * WC tested up to: 4.2
  *
  * GitHub Plugin URI: woocommerce/automatewoo-subscriptions
- * GitHub Branch: master
+ * Primary Branch: trunk
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.2.0';
+	private $version = '1.2.1';
 
 	/**
 	 * Instance of singleton.

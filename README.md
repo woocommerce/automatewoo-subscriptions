@@ -63,7 +63,7 @@ In the future, we may add actions to:
 
 To install:
 
-1. Download the latest version of the plugin [here](https://github.com/woocommerce/automatewoo-subscriptions/archive/master.zip)
+1. Download the latest version of the plugin [here](https://github.com/woocommerce/automatewoo-subscriptions/releases)
 1. Go to **Plugins > Add New > Upload** administration screen on your WordPress site
 1. Select the ZIP file you just downloaded
 1. Click **Install Now**

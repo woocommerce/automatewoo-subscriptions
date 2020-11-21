@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
  *
  *
  * @class Action_Subscription_Update_Next_Payment
- * @since 1.0.0
+ * @since 1.2.2
  */
 class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscription {
 
@@ -28,16 +28,11 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 	 *
 	 * @throws \Exception When there is an error.
 	 */
-	public function run() {
-		$subscription     = $this->get_subscription_to_edit();
+	public function edit_subscription( $subscription ) {
 		$old_payment_date = $subscription->get_date( 'next_payment' );
 		$subscription->update_meta_data( '_old_schedule_next_payment', $old_payment_date );
 		$subscription->save();
-		$date_string = sprintf(
-			'%1$s %2$s:00',
-			$this->get_option( 'new_payment_date' ),
-			implode( ':', $this->get_option( 'new_payment_time' ) )
-		);
+		$date_string = $this->get_new_payment_date();
 		$new_payment_date_string = wcs_get_datetime_from( $date_string );
 		$subscription->update_dates(
 			array(
@@ -62,5 +57,25 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 		$time->set_name( 'new_payment_time' );
 		$time->set_title( __( 'New Payment Time', 'automatewoo-subscriptions' ) );
 		$this->add_field( $time );
+	}
+
+	private function get_new_payment_date() {
+		return sprintf(
+			'%1$s %2$s:00',
+			$this->get_option( 'new_payment_date' ),
+			implode( ':', $this->get_option( 'new_payment_time' ) )
+		);
+	}
+
+	/**
+	 * Create a note recording the shipping method ID and workflow name to add after updating shipping.
+	 *
+	 * Helpful for tracing the history of this action by viewing the subscription's notes.
+	 *
+	 * @param array $shipping_data Shipping line item data. Same data as the return value of @see $this->get_object_for_edit().
+	 * @return string
+	 */
+	protected function get_note( $subscription ) {
+		return sprintf( __( '%1$s workflow run: updated next payment date on subscription from %2$s to %3$s', 'automatewoo-subscriptions' ), $this->workflow->get_title(), $subscription->get_meta( '_old_schedule_next_payment' ), $subscription->get_date( 'next_payment' ) );
 	}
 }

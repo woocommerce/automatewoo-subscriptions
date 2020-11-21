@@ -74,6 +74,11 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 	 * @return string
 	 */
 	protected function get_note( $subscription ) {
-		return sprintf( __( '%1$s workflow run: updated next payment date on subscription from %2$s to %3$s', 'automatewoo-subscriptions' ), $this->workflow->get_title(), $this->original_payment_date, $subscription->get_date( 'next_payment' ) );
+		return sprintf(
+			__( '%1$s workflow run: updated next payment date on subscription from %2$s to %3$s', 'automatewoo-subscriptions' ),
+			$this->workflow->get_title(),
+			$this->original_payment_date,
+			$subscription->get_date( 'next_payment' )
+		);
 	}
 }

@@ -13,7 +13,13 @@ defined( 'ABSPATH' ) || exit;
  */
 class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscription {
 
+	/**
+	 * The next payment date of the subscription before running the action.
+	 *
+	 * @var string
+	 */
 	private $original_payment_date;
+
 	/**
 	 * Explain to store admin what this action does via a unique title and description.
 	 */
@@ -30,13 +36,8 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 	 */
 	public function edit_subscription( $subscription ) {
 		$this->original_payment_date = $subscription->get_date( 'next_payment' );
-		$date_string = $this->get_new_payment_date();
-		$new_payment_date_string = wcs_get_datetime_from( $date_string );
-		$subscription->update_dates(
-			array(
-				'next_payment' => wcs_get_datetime_utc_string( $new_payment_date_string ),
-			)
-		);
+		$new_payment_date_string     = wcs_get_datetime_from( $this->get_new_payment_date() );
+		$subscription->update_dates( array( 'next_payment' => wcs_get_datetime_utc_string( $new_payment_date_string ) ) );
 	}
 
 	function load_fields() {

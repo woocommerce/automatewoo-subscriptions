@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
  */
 class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscription {
 
-
+	private $original_payment_date;
 	/**
 	 * Explain to store admin what this action does via a unique title and description.
 	 */
@@ -29,9 +29,7 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 	 * @throws \Exception When there is an error.
 	 */
 	public function edit_subscription( $subscription ) {
-		$old_payment_date = $subscription->get_date( 'next_payment' );
-		$subscription->update_meta_data( '_old_schedule_next_payment', $old_payment_date );
-		$subscription->save();
+		$this->original_payment_date = $subscription->get_date( 'next_payment' );
 		$date_string = $this->get_new_payment_date();
 		$new_payment_date_string = wcs_get_datetime_from( $date_string );
 		$subscription->update_dates(
@@ -76,6 +74,6 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 	 * @return string
 	 */
 	protected function get_note( $subscription ) {
-		return sprintf( __( '%1$s workflow run: updated next payment date on subscription from %2$s to %3$s', 'automatewoo-subscriptions' ), $this->workflow->get_title(), $subscription->get_meta( '_old_schedule_next_payment' ), $subscription->get_date( 'next_payment' ) );
+		return sprintf( __( '%1$s workflow run: updated next payment date on subscription from %2$s to %3$s', 'automatewoo-subscriptions' ), $this->workflow->get_title(), $this->original_payment_date, $subscription->get_date( 'next_payment' ) );
 	}
 }

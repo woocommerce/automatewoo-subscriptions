@@ -36,8 +36,8 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 	 */
 	public function edit_subscription( $subscription ) {
 		$this->original_payment_date = $subscription->get_date( 'next_payment' );
-		$new_payment_date_string     = wcs_get_datetime_from( $this->get_new_payment_date() );
-		$subscription->update_dates( array( 'next_payment' => wcs_get_datetime_utc_string( $new_payment_date_string ) ) );
+		$new_payment_date            = $this->get_new_payment_date();
+		$subscription->update_dates( array( 'next_payment' => wcs_get_datetime_utc_string( $new_payment_date ) ) );
 	}
 
 	function load_fields() {
@@ -58,11 +58,18 @@ class Action_Subscription_Update_Next_Payment extends Abstract_Action_Subscripti
 		$this->add_field( $time );
 	}
 
+	/**
+	 * Get new payment datetime object as set in the action.
+	 *
+	 * @return null|WC_DateTime in site's timezone
+	 */
 	private function get_new_payment_date() {
-		return sprintf(
-			'%1$s %2$s:00',
-			$this->get_option( 'new_payment_date' ),
-			implode( ':', $this->get_option( 'new_payment_time' ) )
+		return wcs_get_datetime_from(
+			sprintf(
+				'%1$s %2$s:00',
+				$this->get_option( 'new_payment_date' ),
+				implode( ':', $this->get_option( 'new_payment_time' ) )
+			)
 		);
 	}
 

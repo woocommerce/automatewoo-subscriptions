@@ -8,10 +8,10 @@
  * License: GPLv3
  * Version: 1.2.1
  * Requires at least: 4.0
- * Tested up to: 5.4
+ * Tested up to: 5.6
  *
  * WC requires at least: 3.0
- * WC tested up to: 4.2
+ * WC tested up to: 4.7
  *
  * GitHub Plugin URI: woocommerce/automatewoo-subscriptions
  * Primary Branch: trunk

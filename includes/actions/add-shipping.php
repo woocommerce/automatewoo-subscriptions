@@ -83,10 +83,10 @@ class Action_Subscription_Add_Shipping extends Abstract_Action_Subscription_Edit
 	 *
 	 * Helpful for tracing the history of this action by viewing the subscription's notes.
 	 *
-	 * @param \WC_Product $shipping Product being added to the subscription. Required so its name can be added to the order note.
+	 * @param array $shipping_data Shipping line item data. Same data as the return value of @see $this->get_object_for_edit().
 	 * @return string
 	 */
-	protected function get_note( $shipping ) {
+	protected function get_note( $shipping_data ) {
 		return sprintf( __( '%1$s workflow run: added %2$s to subscription. (Shipping Method ID: %3$d; Workflow ID: %4$d)', 'automatewoo-subscriptions' ), $this->workflow->get_title(), $shipping_data['line_item_name'], $shipping_data['shipping_method_id'], $this->workflow->get_id() );
 	}
 }

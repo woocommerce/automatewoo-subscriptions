@@ -1,5 +1,8 @@
 == AutomateWoo - Subscriptions Add-on changelog ==
 
+2020-xx-xx - version 1.2.2
+* Fix - Issue with undefined $shipping_data variable
+
 2020-10-16 - version 1.2.1
 * Tweak - Renames production branch from 'master' to 'trunk'
 

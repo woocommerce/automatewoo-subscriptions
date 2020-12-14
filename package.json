@@ -1,0 +1,11 @@
+{
+
+    "name": "automatewoo-subscriptions",
+    "title": "AutomateWoo - Subscriptions Add-on",
+    "description": "Advanced actions for automating a subscription's lifecycle with AutomateWoo.",
+    "license": "GPL-3.0-only",
+	"version": "1.2.1",
+	"scripts": {
+		"build": "git archive --format zip HEAD | cat > $npm_package_name.zip"
+	}
+}

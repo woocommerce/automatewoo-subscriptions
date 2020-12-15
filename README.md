@@ -73,6 +73,11 @@ To install:
 
 To keep the plugin up-to-date, use the [GitHub Updater](https://github.com/afragen/github-updater).
 
+## Development
+
+
+### [Releasing and Deploying](https://github.com/woocommerce/automatewoo-subscriptions/wiki/Release-and-Deploy#step-by-step-guide)
+
 ## Reporting Issues
 
 If you find a problem, please [open a new Issue](https://github.com/woocommerce/automatewoo-subscriptions/issues/new). If you would like to request a new feature for this plugin, please [use the ideas board](https://ideas.automatewoo.com/automatewoo).

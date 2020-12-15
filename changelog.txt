@@ -1,5 +1,9 @@
 == AutomateWoo - Subscriptions Add-on changelog ==
 
+2020-12-15 - version 1.2.2
+* Fix - undefined shipping_data variable 
+* Tweak - Add support for WordPress 5.6, WooCommerce 4.7 & PHP 8
+
 2020-10-16 - version 1.2.1
 * Tweak - Renames production branch from 'master' to 'trunk'
 

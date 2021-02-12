@@ -6,12 +6,12 @@
  * Author: WooCommerce
  * Author URI: https://woocommerce.com/
  * License: GPLv3
- * Version: 1.2.2
+ * Version: 1.2.3
  * Requires at least: 4.0
  * Tested up to: 5.6
  *
  * WC requires at least: 3.0
- * WC tested up to: 4.7
+ * WC tested up to: 5.0
  *
  * GitHub Plugin URI: woocommerce/automatewoo-subscriptions
  * Primary Branch: trunk
@@ -72,7 +72,7 @@ final class AutomateWoo_Subscriptions {
 	 *
 	 * @var string
 	 */
-	private $version = '1.2.2';
+	private $version = '1.2.3';
 
 	/**
 	 * Instance of singleton.

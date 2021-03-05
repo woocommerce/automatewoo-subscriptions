@@ -1,3 +1,5 @@
+:warning: **DO NOT USE THIS REPO** - AutomateWoo's Subscription add-on was merged into AutomateWoo 5.4 :warning:
+
 # AutomateWoo - Subscriptions Add-on
 
 A subscription has a number of core parts:
